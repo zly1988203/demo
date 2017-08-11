@@ -1,0 +1,16 @@
+.footer{
+  width: 100%;
+  text-align: center;
+  /*background: #ededed;*/
+  font-size: 0.8rem;
+}
+
+.f-text{
+  color: #999;
+  display: block;
+  text-transform: uppercase;
+  float: none;
+  text-align: center;
+  margin-top: 20px;
+  font-weight: 400;
+}

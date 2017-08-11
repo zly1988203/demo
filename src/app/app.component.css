@@ -1,0 +1,18 @@
+.container{
+  width:100%;
+}
+
+.page-left{
+  width:20%;
+  float:left;
+}
+
+.page-right{
+  width: 80%;
+  float: left;
+}
+
+.row{
+  width: 80%;
+  margin: 0.2rem;
+}
