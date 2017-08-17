@@ -3,6 +3,8 @@
   text-align: center;
   /*background: #ededed;*/
   font-size: 0.8rem;
+  height: 2rem;
+  background-color: #f1f1f1;
 }
 
 .f-text{
@@ -13,4 +15,5 @@
   text-align: center;
   margin-top: 20px;
   font-weight: 400;
+  line-height: 2rem;
 }

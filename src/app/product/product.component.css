@@ -1,0 +1,17 @@
+.content{
+  width: 100%;
+}
+
+.goods{
+  width: 100%;
+}
+
+.g-left{
+  float: left;
+  width: 49%;
+}
+
+.g-right{
+  float: left;
+  width: 49%;
+}
