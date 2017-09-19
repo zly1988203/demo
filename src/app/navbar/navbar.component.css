@@ -1,14 +1,12 @@
 .header{
   width: 100%;
   background-color: black;
-  font-size: 1.5rem;
+  font-size: 1.2rem;
 }
 .header a{
   color: white;
   text-decoration: none;
 }
-
-
 
 a:hover{
   background:greenyellow;
