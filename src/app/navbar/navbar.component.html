@@ -1,6 +1,7 @@
 <div class="header">
-  <span><a href="#">首页</a></span>
-  <span><a href="#">论坛</a></span>
-  <span><a href="#">帮助</a></span>
-  <span><a href="#">联系我们</a></span>
+  <span><a [routerLink]="['/home']">首页</a></span>
+  <input type="button" (click)="toproduct()" value="商品">
+  <span><a [routerLink]="['/product',1]">论坛</a></span>
+  <span><a [routerLink]="['/help']">帮助</a></span>
+  <span><a [routerLink]="['/callus']">联系我们</a></span>
 </div>

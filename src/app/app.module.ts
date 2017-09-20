@@ -9,7 +9,10 @@ import { SearchComponent } from './search/search.component';
 import { CarouselComponent } from './carousel/carousel.component';
 import { ProductComponent } from './product/product.component';
 import { StarsComponent } from './stars/stars.component';
-import { AppRoutingModule } from './app-routes.module'
+import { AppRoutingModule } from './app.routes';
+import { HomeComponent } from './home/home.component';
+import { Code404Component } from './code404/code404.component'
+
 
 @NgModule({
   declarations: [
@@ -20,7 +23,8 @@ import { AppRoutingModule } from './app-routes.module'
     CarouselComponent,
     ProductComponent,
     StarsComponent,
-    // AppRoutingModule
+    HomeComponent,
+    Code404Component,
   ],
   imports: [
     BrowserModule,
