@@ -11,7 +11,9 @@ import { ProductComponent } from './product/product.component';
 import { StarsComponent } from './stars/stars.component';
 import { AppRoutingModule } from './app.routes';
 import { HomeComponent } from './home/home.component';
-import { Code404Component } from './code404/code404.component'
+import { Code404Component } from './code404/code404.component';
+import { ProductDetailComponent } from './product-detail/product-detail.component';
+import { SellerInfoComponent } from './seller-info/seller-info.component'
 
 
 @NgModule({
@@ -25,6 +27,8 @@ import { Code404Component } from './code404/code404.component'
     StarsComponent,
     HomeComponent,
     Code404Component,
+    ProductDetailComponent,
+    SellerInfoComponent,
   ],
   imports: [
     BrowserModule,
