@@ -16,7 +16,7 @@ export class NavbarComponent implements OnInit {
   }
 
   toproduct(){
-    this.router.navigate(['/product',3]);
+    this.router.navigate(['/product','3']);
   }
 
 }

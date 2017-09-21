@@ -1,18 +1,32 @@
+.app-body{
+  width: 100%;
+  height: 100%;
+  margin-bottom: 2rem;
+}
+
 .container{
   width:100%;
 }
 
 .page-left{
-  width:20%;
+  width:10%;
   float:left;
 }
 
 .page-right{
-  width: 80%;
+  width: 70%;
   float: left;
 }
 
 .row{
-  width: 80%;
+  width: 100%;
   margin: 0.2rem;
+}
+
+.call{
+  width: 15%;
+  float: left;
+  text-align: center;
+  border: 1px solid #999999;
+  margin: 0 0 0 1rem;
 }

@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import {ActivatedRoute, Params} from "@angular/router";
+import {Product} from "./product";
 
 @Component({
   selector: 'app-product',
@@ -8,19 +9,18 @@ import {ActivatedRoute, Params} from "@angular/router";
 })
 export class ProductComponent implements OnInit {
 
-  private productId:number;
+  private productId:string;
+  private productName:string;
   constructor(private routerInfo:ActivatedRoute) { }
 
   ngOnInit() {
-    this.routerInfo.params.subscribe((params:Params) => this.productId = params['id']);//参数订阅 subscribe
+    // this.routerInfo.params.subscribe((params:Params) => this.productId = params['id']);//参数订阅 subscribe
 
     // this.productId = this.routerInfo.snapshot.params['id'];//参数快照 snapshot
-  }
 
-  goodsList = [{
-    img:"",
-    name:"",
-    price:"",
-    des:""
-  }]
+    this.routerInfo.data.subscribe((data:{product:Product}) =>{
+       this.productId = data.product.id;
+       this.productName = data.product.name;
+    })
+  }
 }

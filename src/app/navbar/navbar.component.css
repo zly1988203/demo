@@ -2,6 +2,7 @@
   width: 100%;
   background-color: black;
   font-size: 1.2rem;
+  padding: 0.2rem;
 }
 .header a{
   color: white;
@@ -11,4 +12,10 @@
 a:hover{
   background:greenyellow;
   text-decoration: none;
+}
+
+.nav-right{
+  float: right;
+  margin-right: 1rem;
+  font-size: 1rem;
 }

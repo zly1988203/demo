@@ -13,7 +13,8 @@ import { AppRoutingModule } from './app.routes';
 import { HomeComponent } from './home/home.component';
 import { Code404Component } from './code404/code404.component';
 import { ProductDetailComponent } from './product-detail/product-detail.component';
-import { SellerInfoComponent } from './seller-info/seller-info.component'
+import { SellerInfoComponent } from './seller-info/seller-info.component';
+import { CallComponent } from './call/call.component'
 
 
 @NgModule({
@@ -29,6 +30,7 @@ import { SellerInfoComponent } from './seller-info/seller-info.component'
     Code404Component,
     ProductDetailComponent,
     SellerInfoComponent,
+    CallComponent,
   ],
   imports: [
     BrowserModule,

@@ -8,6 +8,10 @@ import {HomeComponent} from "./home/home.component";
 import {Code404Component} from "./code404/code404.component";
 import {ProductDetailComponent} from "./product-detail/product-detail.component";
 import {SellerInfoComponent} from "./seller-info/seller-info.component";
+import {CallComponent} from "./call/call.component";
+import {LoginGuard} from "./guard/login_guard";
+import {UnsaveGuard} from "./guard/unsave_guard";
+import {ProductResolve} from "./guard/product_resolve";
 
 const routes: Routes = [
   {
@@ -21,13 +25,17 @@ const routes: Routes = [
     children:[
       {path:'',component:ProductDetailComponent},
       {path:'seller/:id',component:SellerInfoComponent}
-    ]
+    ],
+    // canActivate:[LoginGuard],canDeactivate:[UnsaveGuard]
+    resolve:{
+      Product:ProductResolve
+    },
   },
   {
-    path: 'help',component:ProductComponent
+    path: 'help',component:SellerInfoComponent
   },
   {
-    path: 'callus',component:ProductComponent
+    path: 'callus',component:CallComponent,outlet:'call'
   },
   {
     path: '**',component:Code404Component
@@ -37,7 +45,7 @@ const routes: Routes = [
 @NgModule({
   imports:[RouterModule.forRoot(routes)],
   exports:[RouterModule],
-  providers:[]
+  providers:[LoginGuard,UnsaveGuard,ProductResolve]
 })
 
 export class AppRoutingModule{}

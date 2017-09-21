@@ -1,7 +1,11 @@
 <div class="header">
   <span><a [routerLink]="['/home']">首页</a></span>
   <input type="button" (click)="toproduct()" value="商品">
-  <span><a [routerLink]="['/product',1]">论坛</a></span>
-  <span><a [routerLink]="['/help']">帮助</a></span>
-  <span><a [routerLink]="['/callus']">联系我们</a></span>
+  <span><a [routerLink]="['/product','1']">商品列表</a></span>
+  <!--<span><a [routerLink]="['/help']">帮助</a></span>-->
+  <span><a [routerLink]="[{outlets:{call:'callus'}}]">联系我们</a></span>
+  <span class="nav-right">
+      <a [routerLink]="[{outlets:{call:null}}]">关闭</a>
+  </span>
+
 </div>
