@@ -1,6 +1,13 @@
 import { Component, OnInit } from '@angular/core';
 import {ActivatedRoute, Params} from "@angular/router";
-import {Product} from "./product";
+
+export class Product{
+  constructor(public id:string,public name:string,public imgUrl:string,public price:number,public des:string){
+
+  }
+
+}
+
 
 @Component({
   selector: 'app-product',
@@ -19,8 +26,9 @@ export class ProductComponent implements OnInit {
     // this.productId = this.routerInfo.snapshot.params['id'];//参数快照 snapshot
 
     this.routerInfo.data.subscribe((data:{product:Product}) =>{
-       this.productId = data.product.id;
-       this.productName = data.product.name;
+       this.productId = data.Product.id
+       this.productName = data.Product.name;
+
     })
   }
 }
