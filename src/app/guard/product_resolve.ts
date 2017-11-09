@@ -1,8 +1,8 @@
 import {Resolve, Router, ActivatedRoute, ActivatedRouteSnapshot, RouterStateSnapshot} from "@angular/router";
 import {Injectable} from "@angular/core";
 import {Observable} from "rxjs";
-import {Product} from "../product/product.component";
-// import {Product} from "../product/product";
+
+import {Product} from "../product/product";
 
 /**
  * Created by zhaoly on 2017/9/21.

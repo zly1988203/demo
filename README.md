@@ -30,3 +30,4 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 
 ## Run demo
 -- npm start
+-- ng g component navbar  创建组件

@@ -15,7 +15,8 @@ import { Code404Component } from './code404/code404.component';
 import { ProductDetailComponent } from './product-detail/product-detail.component';
 import { SellerInfoComponent } from './seller-info/seller-info.component';
 import { CallComponent } from './call/call.component'
-
+import {ProductListService} from "./common/product-list.service";
+import {AnotherProductService} from "./common/another-product.service";
 
 @NgModule({
   declarations: [
@@ -35,9 +36,9 @@ import { CallComponent } from './call/call.component'
   imports: [
     BrowserModule,
     FormsModule,
-    AppRoutingModule
+    AppRoutingModule,
   ],
-  providers: [],
+  providers: [ProductListService,AnotherProductService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
